@@ -7,7 +7,9 @@ const Nav = React.createClass({
   render: function() {
     return (
       <div className="main-navigation">
-      	<div className="logo">LOGOTYPE</div>
+      	<div className="logo">
+          <Link to='/'><img className="sign" src="./image/logo.svg" /></Link>
+        </div>
       	<div className="navi-divider"></div>
       	<ul className="nav">
       		<li><Link to='/' activeClassName='active'>домой</Link></li>
