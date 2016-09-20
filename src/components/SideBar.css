@@ -1,0 +1,8 @@
+.sidebar {
+	display: inline-block;
+	width: 12%;
+	height: 500px;
+	text-align: center;
+	border-left: 1px solid black;
+	vertical-align: top;
+}

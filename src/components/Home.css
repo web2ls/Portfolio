@@ -1,0 +1,58 @@
+.home-page {
+	position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1;
+    background: #ccc;
+}
+
+video {
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.introduce {
+	position: absolute;
+	left: 63%;
+	top: 35%;
+	width: 40vw;
+	transform: translateX(-63%);
+	text-transform: uppercase;
+	font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+	color: #fff;
+	z-index: 5;
+    text-align: center;
+}
+
+.social {
+    text-align: center;
+}
+
+.social li {
+	display: inline-block;
+    margin-right: 3vw;
+    font-size: 3vw;
+}
+
+.social li a {
+    color: #fff;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.social li a:hover {
+    color: #1EB2B2;
+}
