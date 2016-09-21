@@ -5,7 +5,10 @@ const SideBar = React.createClass({
   render: function() {
     return (
       <div className="sidebar">
-      	Sidebar Panel
+      	<img src='./image/test.jpg' />
+      	<img src='./image/test.jpg' />
+      	<img src='./image/test.jpg' />
+      	<img src='./image/test.jpg' />
       </div>
     )
   }

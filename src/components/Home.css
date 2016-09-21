@@ -53,6 +53,26 @@ video {
     transition: all .5s;
 }
 
-.social li a:hover {
+/*.social li a:hover {
     color: #1EB2B2;
+}*/
+
+.social li:hover .fa-vk {
+    color: #507299;
+}
+
+.social li:hover .fa-facebook {
+    color: #3B5998;
+}
+
+.social li:hover .fa-linkedin {
+    color: #1E87BE;
+}
+
+.social li:hover .fa-github {
+    color: #4078C0;
+}
+
+.social li:hover .fa-twitter {
+    color: #61BCF6;
 }

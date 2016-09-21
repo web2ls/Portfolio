@@ -16,3 +16,53 @@ ul {
 .active {
 	color: #fff;
 }
+
+.container-content {
+	display: inline-block;
+	width: 58%;
+	margin-left: 18%;  
+	margin-top: 2%; 
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.content__header {
+	font-weight: 700;
+    font-size: 1.7vw;
+}
+
+.content__began {
+	line-height: 0;
+}
+
+.red-line,
+.cyan-line,
+.gray-line {
+	display: inline-block;
+	width: 33.33%;
+	height: 3px;
+}
+
+.red-line {
+	background: #EC3233;
+}
+
+.cyan-line {
+	background: #1EB2B2;
+}
+
+.gray-line {
+	background: #E0E0E0;
+}
+
+.content__text {
+	font-size: 1vw;
+	line-height: 2vw;
+	background: #fff;
+	padding: 2% 1%;
+	text-align: center;
+}
+
+.content__text a {
+	color: #000;
+	text-decoration: none;
+}

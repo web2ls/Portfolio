@@ -6,3 +6,8 @@
 	border-left: 1px solid black;
 	vertical-align: top;
 }
+
+.sidebar img {
+	width: 70%;
+	height: auto;
+}
