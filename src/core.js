@@ -10,6 +10,7 @@ import App from './components/App.jsx';
 import Home from './components/Home.jsx';
 import Contacts from './components/Contacts.jsx';
 import Services from './components/Services.jsx';
+import NotFoundPage from './components/NotFoundPage.jsx';
 
 ReactDOM.render(
   <Router history={hashHistory}>
@@ -17,6 +18,7 @@ ReactDOM.render(
   		<IndexRoute component={Home} />
   		<Route path='/contacts' component={Contacts} />
   		<Route path='/services' component={Services} />
+  		<Route path='*' component={NotFoundPage} />
   	</Route>
   </Router>,
   document.getElementById('container-app')
