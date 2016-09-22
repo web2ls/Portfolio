@@ -11,13 +11,17 @@ import Home from './components/Home.jsx';
 import Contacts from './components/Contacts.jsx';
 import Services from './components/Services.jsx';
 import NotFoundPage from './components/NotFoundPage.jsx';
+import Works from './components/Works.jsx';
+import AdminRoom from './components/AdminRoom.jsx';
 
 ReactDOM.render(
   <Router history={hashHistory}>
+    <Route path='/admin_room' component={AdminRoom} />
   	<Route path='/' component={App}>
   		<IndexRoute component={Home} />
   		<Route path='/contacts' component={Contacts} />
   		<Route path='/services' component={Services} />
+      <Route path='/works' component={Works} />
   		<Route path='*' component={NotFoundPage} />
   	</Route>
   </Router>,

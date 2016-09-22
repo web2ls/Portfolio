@@ -1,5 +1,4 @@
 require('./Services.css');
-
 import React from 'react';
 
 import SideBar from './SideBar.jsx';
@@ -15,7 +14,7 @@ const Services = React.createClass({
 					 	<div className='cyan-line'></div>
 					 	<div className='gray-line'></div>
 					 </div>
-					<div className='content__text'>	
+					<div className='content__text'>
 						<div className='services__card'>
 							Верстка сайта с PSD шаблона
 						</div>
@@ -31,7 +30,7 @@ const Services = React.createClass({
 						<div className='services__card'>
 							Исправление ошибок и недочетов на работающих сайтах
 						</div>
-					 </div>					 
+					 </div>
 				</div>
 				<SideBar />
 			</div>

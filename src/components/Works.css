@@ -1,0 +1,17 @@
+.works__card {
+	position: relative;
+	display: inline-block;
+	width: 40%;
+	height: auto;
+	margin-right: 5%;
+	margin-bottom: 5%;
+	padding: 3% 3%;
+	/*border: 1px solid black;*/
+	box-shadow: 0 10px 6px -6px #777;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 1.2vw;
+	line-height: 1vw;
+	transition: all .3s;
+	background: #FAF9F5;
+}

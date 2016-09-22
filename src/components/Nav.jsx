@@ -14,7 +14,7 @@ const Nav = React.createClass({
       	<ul className="nav">
       		<li><Link to='/' activeClassName='active'>главная</Link></li>
       		<li><Link to='/contacts' activeClassName='active'>контакты</Link></li>
-      		<li><Link to='/' activeClassName='active'>проекты</Link></li>
+      		<li><Link to='/works' activeClassName='active'>проекты</Link></li>
       		<li><Link to='/services' activeClassName='active'>услуги</Link></li>
       		<li><Link to='/' activeClassName='active'>блог</Link></li>
       	</ul>
