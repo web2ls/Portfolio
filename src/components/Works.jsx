@@ -1,9 +1,19 @@
 require('./Works.css');
-import React from 'react';
 
+import database from '../core.js';
+import React from 'react';
 import SideBar from './SideBar.jsx';
 
+
 const Works = React.createClass({
+	componentWillMount: function() {
+		let data = database.ref('works');
+		data.on('value', function(snapshot) {
+			let a = snapshot.val();
+			console.log(a);
+		});
+	},
+
 	render: function() {
 		return (
 			<div>

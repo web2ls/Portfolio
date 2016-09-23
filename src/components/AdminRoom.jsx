@@ -1,6 +1,7 @@
 require('./AdminRoom.css');
 
 import React from 'react';
+import {Link} from 'react-router';
 
 const AdminRoom = React.createClass({
   render: function() {
@@ -9,13 +10,17 @@ const AdminRoom = React.createClass({
         <header>
           Admin Panel
         </header>
-        <nav>
+        <nav className='admin__navigation'>
           <div className='admin-nav__header'>Navigation Panel</div>
           <ul className='admin-nav__menu'>
-            <li>My Works</li>
-            <li>My Blogs</li>
+            <li><Link to='/admin_room/add_work'>Add New Works</Link></li>
+            <li><Link to='/admin_room/add_blog'>Add New Blogs</Link></li>
+            <li><Link to='/'>Go to Home</Link></li>
           </ul>
         </nav>
+        <div className='admin__content'>
+          {this.props.children}
+        </div>
       </div>
     )
   }

@@ -12,11 +12,22 @@ header {
   text-align: center;
 }
 
-nav {
+.admin__navigation {
+  display: inline-block;
   width: 20%;
   height: 450px;
   background: #2c3e50;
   text-align: center;
+  vertical-align: top;
+}
+
+.admin__navigation a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.admin__navigation a:hover {
+  color: #2980b9;
 }
 
 .admin-nav__header {
@@ -33,4 +44,12 @@ nav {
   line-height: 3vw;
   font-weight: 400;
   color: #fff;
+}
+
+.admin__content {
+  display: inline-block;
+  width: 60%;
+  margin-top: 40px;
+  vertical-align: top;
+  text-align: center;
 }
