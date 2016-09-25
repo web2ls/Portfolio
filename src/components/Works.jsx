@@ -1,16 +1,23 @@
 require('./Works.css');
 
+import _ from 'underscore';
 import database from '../core.js';
 import React from 'react';
 import SideBar from './SideBar.jsx';
 
 
 const Works = React.createClass({
+	getInitialState: function() {
+		return {
+			works: {}
+		}
+	},
+
 	componentWillMount: function() {
 		let data = database.ref('works');
-		data.on('value', function(snapshot) {
-			let a = snapshot.val();
-			console.log(a);
+		data.once('value', (snapshot) => {
+			let	a = snapshot.val();
+			this.setState({works: a});
 		});
 	},
 
@@ -25,15 +32,11 @@ const Works = React.createClass({
 					 	<div className='gray-line'></div>
 					 </div>
 					<div className='content__text'>
-						<div className='works__card'>
-              works1
-            </div>
-            <div className='works__card'>
-              works2
-            </div>
-            <div className='works__card'>
-              works3
-            </div>
+						{
+							_.values(this.state.works).map(work => {
+								return <div key={work.id}>{work.workName}</div>
+							})
+						}
 					</div>
 				</div>
 				<SideBar />

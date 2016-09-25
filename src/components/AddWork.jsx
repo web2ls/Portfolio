@@ -4,6 +4,7 @@ import database from '../core.js';
 const AddWork = React.createClass({
 	handleAddNewWork: function() {
 		let newWork = {
+			id: new Date().getTime(),
 			workName: this.refs.workName.value,
 			workDescription: this.refs.workDescription.value,
 			workLink: this.refs.workLink.value
