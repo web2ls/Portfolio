@@ -1,9 +1,10 @@
 require('./Works.css');
 
 import _ from 'underscore';
-import database from '../core.js';
+import {database, storage} from '../core.js';
 import React from 'react';
 import SideBar from './SideBar.jsx';
+import Work from './Work.jsx';
 
 
 const Works = React.createClass({
@@ -34,7 +35,7 @@ const Works = React.createClass({
 					<div className='content__text'>
 						{
 							_.values(this.state.works).map(work => {
-								return <div key={work.id}>{work.workName}</div>
+								return <Work key={work.id} workName={work.workName} />
 							})
 						}
 					</div>

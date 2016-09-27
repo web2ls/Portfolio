@@ -12,6 +12,7 @@ const config = {
 };
 firebase.initializeApp(config);
 const database = firebase.database();
+const storage = firebase.storage();
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -44,4 +45,4 @@ ReactDOM.render(
   document.getElementById('container-app')
 );
 
-export default database;
+export {database, storage};

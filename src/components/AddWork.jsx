@@ -1,5 +1,9 @@
 import React from 'react';
-import database from '../core.js';
+import {database, storage} from '../core.js';
+
+const fileButton = document.getElementById('fileButton');
+
+
 
 const AddWork = React.createClass({
 	handleAddNewWork: function() {
@@ -10,6 +14,14 @@ const AddWork = React.createClass({
 			workLink: this.refs.workLink.value
 		};
 		database.ref('works').push(newWork);
+	},
+
+	handleFileInput: function(event) {
+		var file = event.target.files[0];
+
+		var storageRef = storage.ref('images/' + file.name);
+
+		storageRef.put(file);
 	},
 
 	render: function() {
@@ -26,6 +38,13 @@ const AddWork = React.createClass({
 						</label><br />
 						<label>
 							Ссылка на проект: <input ref='workLink' type='text' />
+						</label> <br />
+						<label>
+							Загрузить фото работы: <input
+							onChange={this.handleFileInput}
+							 id='fileButton'
+							 ref='workImage'
+							  type='file' />
 						</label>
 						<br />
 						<button onClick={this.handleAddNewWork} type='button'>Добавить проект</button>
