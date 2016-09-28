@@ -35,7 +35,9 @@ const Works = React.createClass({
 					<div className='content__text'>
 						{
 							_.values(this.state.works).map(work => {
-								return <Work key={work.id} workName={work.workName} />
+								return <Work key={work.id}
+								 workDescr={work.workDescr}
+								 fileImageName={work.fileImageName} />
 							})
 						}
 					</div>
