@@ -15,3 +15,7 @@
 	transition: all .3s;
 	background: #FAF9F5;
 }
+
+.services__card:hover {
+	box-shadow: 0 3px 2px -2px #777;
+}

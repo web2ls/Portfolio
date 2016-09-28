@@ -14,13 +14,43 @@ const Technology = React.createClass({
            </div>
            <div className='content__text'>
               <div className='technology__card'>
-                logo1
+                <img src='./image/html5.svg' />
               </div>
               <div className='technology__card'>
-                logo2
+                <img src='./image/css3.svg' />
               </div>
               <div className='technology__card'>
-                logo3
+                <img src='./image/javascript.svg' />
+              </div>
+              <div className='technology__card'>
+                <img src='./image/jquery.svg' />
+              </div>
+              <div className='technology__card'>
+                <img src='./image/meteor.svg' />
+              </div>
+              <div className='technology__card'>
+                <img src='./image/react.svg' />
+              </div>
+              <div className='technology__card'>
+                <img src='./image/bootstrap.svg' />
+              </div>
+              <div className='technology__card'>
+                <img src='./image/sass.svg' />
+              </div>
+              <div className='technology__card'>
+                <img src='./image/webpack.svg' />
+              </div>
+              <div className='technology__card'>
+                <img src='./image/photoshop.svg' />
+              </div>
+              <div className='technology__card'>
+                <img src='./image/firebase.svg' />
+              </div>
+              <div className='technology__card'>
+                <img src='./image/mongodb.svg' />
+              </div>
+              <div className='technology__card'>
+                <img src='./image/nodejs.svg' />
               </div>
            </div>
         </div>
