@@ -52,6 +52,9 @@ const Technology = React.createClass({
               <div className='technology__card'>
                 <img src='./image/nodejs.svg' />
               </div>
+              <div className='technology__card'>
+                <img src='./image/github.svg' />
+              </div>
            </div>
         </div>
       </div>
