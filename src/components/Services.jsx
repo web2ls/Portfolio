@@ -2,6 +2,7 @@ require('./Services.css');
 import React from 'react';
 
 import SideBar from './SideBar.jsx';
+import Technology from './Technology.jsx';
 
 const Services = React.createClass({
 	render: function() {
@@ -33,6 +34,7 @@ const Services = React.createClass({
 					 </div>
 				</div>
 				<SideBar />
+				<Technology />
 			</div>
 		)
 	}
