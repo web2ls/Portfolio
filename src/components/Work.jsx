@@ -20,7 +20,7 @@ const Work = React.createClass({
   render: function() {
     return (
       <div className='work__card'>
-        <img src={this.state.imageLink} />
+        <a href="#"><img src={this.state.imageLink} /></a>
       </div>
     )
   }
