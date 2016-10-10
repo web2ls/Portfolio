@@ -38,8 +38,8 @@ const AdminRoom = React.createClass({
         <nav className='admin__navigation'>
           <div className='admin-nav__header'>Navigation Panel</div>
           <ul className='admin-nav__menu'>
-            <li className={this.state.authorized ? '' : 'hidden'}><Link to='/admin_room/add_work'>Add New Works</Link></li>
-            <li className={this.state.authorized ? '' : 'hidden'}><Link to='/admin_room/add_blog'>Add New Blogs</Link></li>
+            <li><Link to='/admin_room/add_work'>Add New Works</Link></li>
+            <li><Link to='/admin_room/add_blog'>Add New Blogs</Link></li>
             <li><Link to='/'>Go to Home</Link></li>
              <li><Link onClick={this.handleSignOutClick} to='/'>Sign Out</Link></li>
           </ul>

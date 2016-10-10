@@ -32,7 +32,6 @@ import LogIn from './components/LogIn.jsx';
 ReactDOM.render(
   <Router history={browserHistory}>
     <Route path='/admin_room' component={AdminRoom}>
-      <IndexRoute component={LogIn} />
       <Route path='/admin_room/add_work' component={AddWork} />
       <Route path='/admin_room/add_blog' component={AddBlog} />
     </Route>
@@ -41,6 +40,7 @@ ReactDOM.render(
   		<Route path='/contacts' component={Contacts} />
   		<Route path='/services' component={Services} />
       <Route path='/works' component={Works} />
+      <Route path='/login' component={LogIn} />
   		<Route path='*' component={NotFoundPage} />
   	</Route> 
   </Router>,

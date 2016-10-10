@@ -1,0 +1,66 @@
+.login__card {
+	position: relative;
+	display: inline-block;
+	width: 70%;
+	height: auto;
+	margin-right: 5%;
+	margin-bottom: 5%;
+	border: 1px solid #2A2A26;
+	box-shadow: 0 10px 6px -6px #777;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 1vw;
+	line-height: 2vw;
+	transition: all .3s;
+	background: #FAF9F5;
+}
+
+.login__card:hover {
+	box-shadow: 0 3px 2px -2px #777;
+}
+
+.userpasswd {
+	margin-bottom: 5vh;
+}
+
+.login-btn {
+	width: 7vw;
+	transition: all .3s;
+}
+
+.login-btn:hover {
+	border-radius: 7px 7px 0 0;
+	outline: 0;
+	border: none;
+	background: #2980b9;
+	color: #fff;
+}
+
+.login-popup__card {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 50%;
+	width: 30%;
+	height: 10%;
+	margin-right: 5%;
+	margin-bottom: 5%;
+	padding: 3vh 1vw;
+	border: 3px solid #2A2A26;
+	box-shadow: 0 10px 6px -6px #777;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 1vw;
+	line-height: 2vw;
+	transition: all .3s;
+	background: #FAF9F5;
+	z-index: 100;
+}
+
+.close-login-popup {
+	position: absolute;
+	top: 0;
+	right: 0.3vw;
+	font-weight: 700;
+	cursor: pointer;
+}

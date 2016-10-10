@@ -16,6 +16,7 @@ const Nav = React.createClass({
       		<li><Link to='/contacts' activeClassName='active'>контакты</Link></li>
       		<li><Link to='/works' activeClassName='active'>проекты</Link></li>
       		<li><Link to='/services' activeClassName='active'>сервисы</Link></li>
+          <li><Link to='/login' activeClassName='active'>идентификация</Link></li>
       	</ul>
       	<div className="navi-divider"></div>
       	<div className="navi-divider"></div>
