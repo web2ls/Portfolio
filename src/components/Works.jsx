@@ -1,10 +1,16 @@
 require('./Works.css');
+const FB = require('../firebaseAPI.js');
+const database = FB.database;
+const storage = FB.storage;
 
 import _ from 'underscore';
-import {database, storage} from '../core.js';
+/*import {database, storage} from '../core.js';*/
 import React from 'react';
 import SideBar from './SideBar.jsx';
 import Work from './Work.jsx';
+
+console.log(database);
+
 
 
 const Works = React.createClass({

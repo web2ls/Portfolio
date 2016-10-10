@@ -1,6 +1,9 @@
 require('./Work.css');
 import React from 'react';
-import {storage} from '../core.js';
+const FB = require('../firebaseAPI.js');
+const database = FB.database;
+const storage = FB.storage;
+/*import {storage} from '../core.js';*/
 
 const Work = React.createClass({
   getInitialState: function() {

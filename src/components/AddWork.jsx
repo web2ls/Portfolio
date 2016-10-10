@@ -1,5 +1,8 @@
 import React from 'react';
-import {database, storage} from '../core.js';
+const FB = require('../firebaseAPI.js');
+const database = FB.database;
+const storage = FB.storage;
+/*import {database, storage} from '../core.js';*/
 
 const fileButton = document.getElementById('fileButton');
 

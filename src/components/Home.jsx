@@ -13,7 +13,7 @@ const Home = React.createClass({
       	<div className="introduce">
       		<h1>алексей слободянский</h1>
       		<h2>Фронтэнд разработчик</h2>
-      		<h3>Создание сайтов \ расширение функционала \ внесение исправлений  </h3>
+      		<h3>Создание сайтов \ расширение функционала \ внесение исправлений</h3>
       		<ul className="social">
       			<li><a href="https://vk.com/slobodianskii" target="_blank"><FontAwesome className="fa fa-vk" name="vkontakte" /></a></li>
       			<li><a href="https://www.facebook.com/aslobodyansky" target="_blank"><FontAwesome className="fa fa-facebook" name="facebook" /></a></li>

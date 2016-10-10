@@ -2,7 +2,7 @@ require('./normalize.css');
 require('./font-awesome/font-awesome.min.css');
 require('./core.css');
 
-const firebase = require('firebase');
+/*const firebase = require('firebase');
 
 const config = {
     apiKey: "AIzaSyBZylV35-qbYyG5xfOqIgfKqRKjVU-eQtU",
@@ -12,7 +12,7 @@ const config = {
 };
 firebase.initializeApp(config);
 const database = firebase.database();
-const storage = firebase.storage();
+const storage = firebase.storage();*/
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -40,9 +40,9 @@ ReactDOM.render(
   		<Route path='/services' component={Services} />
       <Route path='/works' component={Works} />
   		<Route path='*' component={NotFoundPage} />
-  	</Route>
+  	</Route> 
   </Router>,
   document.getElementById('container-app')
 );
 
-export {database, storage};
+/*export {database, storage};*/
