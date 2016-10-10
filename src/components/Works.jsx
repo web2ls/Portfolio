@@ -9,8 +9,6 @@ import React from 'react';
 import SideBar from './SideBar.jsx';
 import Work from './Work.jsx';
 
-console.log(database);
-
 
 
 const Works = React.createClass({

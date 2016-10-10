@@ -17,6 +17,10 @@ ul {
 	color: #fff;
 }
 
+.hidden {
+	display: none;
+}
+
 .container-content {
 	display: inline-block;
 	width: 58%;

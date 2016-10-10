@@ -27,10 +27,12 @@ import Works from './components/Works.jsx';
 import AdminRoom from './components/AdminRoom.jsx';
 import AddWork from './components/AddWork.jsx';
 import AddBlog from './components/AddBlog.jsx';
+import LogIn from './components/LogIn.jsx';
 
 ReactDOM.render(
   <Router history={browserHistory}>
     <Route path='/admin_room' component={AdminRoom}>
+      <IndexRoute component={LogIn} />
       <Route path='/admin_room/add_work' component={AddWork} />
       <Route path='/admin_room/add_blog' component={AddBlog} />
     </Route>

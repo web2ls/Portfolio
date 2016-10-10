@@ -30454,10 +30454,10 @@
 	var firebase = __webpack_require__(269);
 
 	var config = {
-	    apiKey: "AIzaSyBZylV35-qbYyG5xfOqIgfKqRKjVU-eQtU",
-	    authDomain: "online-react-app.firebaseapp.com",
-	    databaseURL: "https://online-react-app.firebaseio.com",
-	    storageBucket: "online-react-app.appspot.com"
+	    apiKey: "AIzaSyDaMWwZ4icC9i93iNbdHP2Xk3kdVh_GXes",
+	    authDomain: "web2ls-2143f.firebaseapp.com",
+	    databaseURL: "https://web2ls-2143f.firebaseio.com",
+	    storageBucket: "web2ls-2143f.appspot.com"
 	};
 
 	firebase.initializeApp(config);
