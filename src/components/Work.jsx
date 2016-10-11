@@ -31,15 +31,17 @@ const Work = React.createClass({
 
   render: function() {
     return (
-      <div className='work__card'>
-        <a href="#"><img
-         onMouseEnter={this.handleWorkMouseEnter}
-         onMouseLeave={this.handleWorkMouseLeave}
-          src={this.state.imageLink} /></a>
-        <div className={this.state.imageHover ? 'work-description' : 'hidden'}>
-          <div className='work-description__header'>Storks</div>
-          <div className='work-description__text'>Мультипликационный фильм аисты дэндинг фильма</div>
-        </div>
+      <div
+       onMouseEnter={this.handleWorkMouseEnter}
+       onMouseLeave={this.handleWorkMouseLeave}
+       className='work__card'>
+        <img src={this.state.imageLink} />
+        <a href={this.props.workLink}>
+          <div className={this.state.imageHover ? 'work-description' : 'hidden'}>
+            <div className='work-description__header'>{this.props.workName}</div>
+            <div className='work-description__text'>{this.props.workDescr}</div>
+          </div>
+        </a>
       </div>
     )
   }
