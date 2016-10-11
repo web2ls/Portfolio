@@ -1,3 +1,5 @@
+require('./AddWork.css');
+
 import React from 'react';
 const FB = require('../firebaseAPI.js');
 const database = FB.database;
@@ -34,19 +36,20 @@ const AddWork = React.createClass({
 					<fieldset>
 						<legend>Добавить новый проект: </legend>
 						<label>
-							Наименование проекта:
+							Наименование проекта: <br />
 							<input ref='workName' type='text' required />
 						</label><br />
 						<label>
-							Описание проекта:
-							<input ref='workDescription' type='text' required />
+							Описание проекта: <br />
+							<textarea ref='workDescription' required></textarea>
 						</label><br />
 						<label>
-							Ссылка на проект:
+							Ссылка на проект: <br />
 							<input ref='workLink' type='text' required />
 						</label> <br />
 						<label>
-							Загрузить фото работы: <input
+							Загрузить фото работы: <br />
+							<input
 							onChange={this.handleFileInput}
 							 id='fileButton'
 							 ref='workImage'

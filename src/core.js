@@ -16,7 +16,7 @@ const storage = firebase.storage();*/
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Router, Route, IndexRoute, browserHistory} from 'react-router';
+import {Router, Route, IndexRoute, hashHistory} from 'react-router';
 
 import App from './components/App.jsx';
 import Home from './components/Home.jsx';
@@ -30,7 +30,7 @@ import AddBlog from './components/AddBlog.jsx';
 import LogIn from './components/LogIn.jsx';
 
 ReactDOM.render(
-  <Router history={browserHistory}>
+  <Router history={hashHistory}>
     <Route path='/admin_room' component={AdminRoom}>
       <Route path='/admin_room/add_work' component={AddWork} />
       <Route path='/admin_room/add_blog' component={AddBlog} />

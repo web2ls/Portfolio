@@ -8,7 +8,8 @@ const storage = FB.storage;
 const Work = React.createClass({
   getInitialState: function() {
     return {
-      imageLink: ''
+      imageLink: '',
+      imageHover: false
     }
   },
 
@@ -20,10 +21,25 @@ const Work = React.createClass({
     });
   },
 
+  handleWorkMouseEnter: function() {
+    this.setState({imageHover: true});
+  },
+
+  handleWorkMouseLeave: function() {
+    this.setState({imageHover: false});
+  },
+
   render: function() {
     return (
       <div className='work__card'>
-        <a href="#"><img src={this.state.imageLink} /></a>
+        <a href="#"><img
+         onMouseEnter={this.handleWorkMouseEnter}
+         onMouseLeave={this.handleWorkMouseLeave}
+          src={this.state.imageLink} /></a>
+        <div className={this.state.imageHover ? 'work-description' : 'hidden'}>
+          <div className='work-description__header'>Storks</div>
+          <div className='work-description__text'>Мультипликационный фильм аисты дэндинг фильма</div>
+        </div>
       </div>
     )
   }
