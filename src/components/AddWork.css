@@ -1,3 +1,49 @@
+.add-work-form {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.add-work-form label {
+	width: 50%;
+}
+
+.add-work-form legend {
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+.add-work-form input {
+	width: 100%;
+	height: 4vh;
+	border-radius: 10px;
+	font-weight: 300;
+	outline: 0;
+	padding: 0 1vw;
+	color: #2980b9;
+}
+
+.add-work-form textarea {
+	width: 100%;
+	height: 10vh;
+	border-radius: 10px;
+	font-weight: 300;
+	outline: 0;
+	padding: 1vh 1vw;
+	color: #2980b9;
+}
+
+.add-work-form button {
+	width: 17vw;
+	transition: all .3s;
+	outline: 0;
+	border: none;	
+}
+
+.add-work-form button:hover {
+	border-radius: 7px;	
+	background: #2980b9;
+	color: #fff;
+}
+
 label {
 	display: inline-block;
 	margin-bottom: 3vh;

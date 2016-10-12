@@ -32,23 +32,31 @@ const AddWork = React.createClass({
 	render: function() {
 		return(
 			<div>
-				<form>
+				<form className='add-work-form'>
 					<fieldset>
 						<legend>Добавить новый проект: </legend>
 						<label>
-							Наименование проекта: <br />
-							<input ref='workName' type='text' required />
+							<input 
+								ref='workName' 
+								type='text' 
+								required
+								placeholder='Наименование проекта...' />
 						</label><br />
 						<label>
-							Описание проекта: <br />
-							<textarea ref='workDescription' required></textarea>
+							<textarea ref='workDescription'
+								 required
+								 placeholder='Описание проекта'>
+							 </textarea>
 						</label><br />
 						<label>
-							Ссылка на проект: <br />
-							<input ref='workLink' type='text' required />
+							<input
+							 	ref='workLink'
+							  	type='text'
+							   	required
+							   	placeholder='Ссылка на проект' />
 						</label> <br />
 						<label>
-							Загрузить фото работы: <br />
+							Загрузить скриншот проекта: <br />
 							<input
 							onChange={this.handleFileInput}
 							 id='fileButton'

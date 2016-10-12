@@ -42,19 +42,19 @@ const LogIn = React.createClass({
 				<div className='login__card'>
 					<div className='auth-header'>Ваши учетные данные: </div>
 					<label>
-						Имя пользователя: <br />
 						<input 
 						className='username' 
 						ref='authName' 
-						type="text" />
+						type="text"
+						placeholder='Введите имя пользователя...' />
 					</label>
 					<br />
 					<label>
-						Пароль: <br />
 						<input 
 						className='userpasswd' 
 						ref='authPasswd' 
-						type="password" />
+						type="password" 
+						placeholder='Введите пароль...' />
 					</label>
 					<br />
 					<button 
@@ -62,10 +62,12 @@ const LogIn = React.createClass({
 					onClick={this.handleAuthBtnClick} 
 					type="button">Вход</button>		
 				</div>
-				<div className={this.state.failLogIn ? 'login-popup__card' : 'hidden'}>
-					Вы указали неверные данные для входа в систему.
-					<div onClick={this.handleClosePopupBtn} className='close-login-popup'>X</div>
-				</div>
+				<div className={this.state.failLogIn ? 'black-screen' : 'hidden'}>
+					<div className='login-popup__card'>
+						Вы указали неверные данные для входа в систему.
+						<div onClick={this.handleClosePopupBtn} className='close-login-popup'>X</div>
+					</div>
+				</div>				
 			</div>
 		)
 	}
