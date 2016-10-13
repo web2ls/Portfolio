@@ -9,7 +9,7 @@ const Services = React.createClass({
 		return (
 			<div>
 				<div className='container-content'>
-					<div className='content__header'>Услуги</div>
+					<div className='content__header'>Сервисы</div>
 					<div className='content__began'>
 						<div className='red-line'></div>
 					 	<div className='cyan-line'></div>

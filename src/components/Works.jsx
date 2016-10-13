@@ -27,6 +27,8 @@ const Works = React.createClass({
 	},
 
 	render: function() {
+		console.log(this.state.works);
+		console.log(_.values(this.state.works));
 		return (
 			<div>
 				<div className='container-content'>
@@ -38,7 +40,7 @@ const Works = React.createClass({
 					 </div>
 					<div className='content__text'>
 						{
-							_.values(this.state.works).map(work => {
+							_.values(this.state.works).reverse().map(work => {
 								return <Work key={work.id}
 								workName={work.workName}
 								 workDescr={work.workDescr}

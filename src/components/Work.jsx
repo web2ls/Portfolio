@@ -36,7 +36,7 @@ const Work = React.createClass({
        onMouseLeave={this.handleWorkMouseLeave}
        className='work__card'>
         <img src={this.state.imageLink} />
-        <a href={this.props.workLink}>
+        <a href={this.props.workLink} target='_blank'>
           <div className={this.state.imageHover ? 'work-description' : 'hidden'}>
             <div className='work-description__header'>{this.props.workName}</div>
             <div className='work-description__text'>{this.props.workDescr}</div>

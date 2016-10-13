@@ -2,17 +2,6 @@ require('./normalize.css');
 require('./font-awesome/font-awesome.min.css');
 require('./core.css');
 
-/*const firebase = require('firebase');
-
-const config = {
-    apiKey: "AIzaSyBZylV35-qbYyG5xfOqIgfKqRKjVU-eQtU",
-    authDomain: "online-react-app.firebaseapp.com",
-    databaseURL: "https://online-react-app.firebaseio.com",
-    storageBucket: "online-react-app.appspot.com"
-};
-firebase.initializeApp(config);
-const database = firebase.database();
-const storage = firebase.storage();*/
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -46,5 +35,3 @@ ReactDOM.render(
   </Router>,
   document.getElementById('container-app')
 );
-
-/*export {database, storage};*/
