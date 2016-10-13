@@ -13,7 +13,7 @@ ul {
   padding-left: 0;
 }
 
-.active {
+.nav li a.active {
 	color: #fff;
 }
 
