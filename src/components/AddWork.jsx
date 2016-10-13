@@ -6,7 +6,6 @@ const database = FB.database;
 const storage = FB.storage;
 /*import {database, storage} from '../core.js';*/
 
-const fileButton = document.getElementById('fileButton');
 
 
 
@@ -24,9 +23,25 @@ const AddWork = React.createClass({
 	},
 
 	handleFileInput: function(event) {
+		var uploader = document.getElementById('uploader');
 		var file = event.target.files[0];
 		var storageRef = storage.ref('images/' + file.name);
-		storageRef.put(file);
+		var task = storageRef.put(file);
+		task.on('state_changed', 
+
+			function progress(snapshot) {
+				var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+				uploader.value = percentage;
+			},
+
+			function error(err) {
+
+			},
+
+			function complete() {
+				
+			}
+		);
 	},
 
 	render: function() {
@@ -57,12 +72,13 @@ const AddWork = React.createClass({
 						</label> <br />
 						<label>
 							Загрузить скриншот проекта: <br />
+							<progress id='uploader' value='0' max='100'>0%</progress>
 							<input
 							onChange={this.handleFileInput}
-							 id='fileButton'
+							 className='fileButton'
 							 ref='workImage'
 							  type='file'
-								required />
+						 		required />
 						</label>
 						<br />
 						<button onClick={this.handleAddNewWork} type='button'>Добавить проект</button>
