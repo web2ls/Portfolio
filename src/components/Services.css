@@ -20,3 +20,17 @@
 .services__card:hover {
 	box-shadow: 0 3px 2px -2px #777;
 }
+
+@media only screen and (max-width : 1400px) and (orientation: portrait) {
+		.services__card {
+			font-size: 3vw;
+			line-height: 2vh;
+		}
+}
+
+@media only screen and (max-width : 1400px) and (orientation: landscape) {
+	.services__card {
+			font-size: 3vw;
+			line-height: 5vh;
+		}
+}

@@ -27,6 +27,7 @@
 }
 
 .nav {
+	margin: 0;
 	color: #858C7B;
 	text-transform: uppercase;
 	font-family: 'Roboto Condensed', sans-serif;
@@ -46,4 +47,73 @@
 
 .nav li a:hover {
 	color: #fff;
+}
+
+@media only screen and (max-width : 1400px) and (orientation: portrait) {
+	.main-navigation {
+		position: relative;
+		width: 100%;
+		height: auto;
+	}
+
+	.logo {
+		margin-top: 0;
+	}
+
+	.sign {
+		width: 15vw;
+	}
+
+	.nav {
+		margin: 0;
+		font-size: 2.5vw;
+	}
+
+	.main-navigation li {
+		display: inline-block;
+		margin-right: 5vw;
+		margin-bottom: 0;
+	}
+
+	.main-navigation li:last-child {
+		margin-right: 0;
+	}
+
+	.navi-divider {
+		display: none;
+	}
+}
+
+@media only screen and (max-width : 1400px) and (orientation: landscape) {
+	.main-navigation {
+		position: relative;
+		width: 100%;
+		height: auto;
+	}
+
+	.logo {
+		margin-top: 0;
+	}
+
+	.sign {
+		width: 10vw;
+	}
+
+	.nav {
+		font-size: 3vw;
+	}
+
+	.main-navigation li {
+		display: inline-block;
+		margin-right: 5vw;
+		margin-bottom: 0;
+	}
+
+	.main-navigation li:last-child {
+		margin-right: 0;
+	}
+
+	.navi-divider {
+		display: none;
+	}
 }

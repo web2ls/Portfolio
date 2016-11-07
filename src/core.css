@@ -70,3 +70,35 @@ ul {
 	color: #000;
 	text-decoration: none;
 }
+
+@media only screen and (max-width : 1400px) and (orientation: portrait) {
+	video {
+		display: none;
+	}
+	
+	.container-content {
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.content__header {
+		font-size: 4.7vw;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width : 1400px) and (orientation: landscape) {
+	video {
+		display: none;
+	}
+
+	.container-content {
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.content__header {
+		font-size: 5.7vw;
+		text-align: center;
+	}
+}

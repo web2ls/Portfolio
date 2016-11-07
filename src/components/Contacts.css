@@ -10,7 +10,7 @@
 	border-radius: 10px;
 	text-align: center;
 	font-size: 3vw;
-	line-height: 3vw;
+	line-height: 60px;
 	transition: all .3s;
 	background: #FAF9F5;
 }
@@ -42,4 +42,19 @@
 .contacts__card a {
 	color: #000;
 	text-decoration: none;
+}
+
+@media only screen and (max-width : 1400px) and (orientation: portrait) {
+	.contacts__card {
+		height: 100px;
+		padding: 10px 0;
+		font-size: 6vw;
+		line-height: 100px;
+	}
+}
+
+@media only screen and (max-width : 1400px) and (orientation: landscape) {
+	.contacts__card {
+		font-size: 5vw;
+	}
 }
