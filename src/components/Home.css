@@ -10,7 +10,7 @@
 
 video {
 	position: fixed;
-    top: 50%;k
+    top: 50%;
     left: 50%;
     min-width: 100%;
     min-height: 100%;
@@ -89,21 +89,22 @@ video {
     }
 
    .introduce {
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
    }
 
    .introduce h1 {
-    font-size: 5vw;
+     font-size: 5vw;
    }
 
-   .introduce h2 {
+   .introduce h2 {  
     font-size: 4vw;
    }
 
    .introduce h3 {
-    font-size: 3vw;
+      font-size: 3vw;
    }
 
    .social li {
@@ -123,17 +124,18 @@ video {
     }
 
    .introduce {
+        top: 40%;
         left: 50%;
         transform: translateX(-50%);
         width: 80%;
    }
 
    .introduce h1 {
-        font-size: 4vw;
+        font-size: 3vw;
    }
 
    .introduce h2 {
-        font-size: 3vw;
+        font-size: 2vw;
    }
 
    .introduce h3 {

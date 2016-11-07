@@ -24,3 +24,16 @@
 .technology__card:hover {
 	box-shadow: 0 3px 2px -2px #777;
 }
+
+@media only screen and (max-width : 1400px) and (orientation: portrait) {
+		.technology__card img {
+			height: 10vw;
+		}
+}
+
+@media only screen and (max-width : 1400px) and (orientation: landscape) {
+	.services__card {
+			font-size: 2vw;
+			line-height: normal;
+		}
+}

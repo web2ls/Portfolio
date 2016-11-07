@@ -1,4 +1,4 @@
-require('./Tecnology.css');
+require('./Technology.css');
 import React from 'react';
 
 const Technology = React.createClass({

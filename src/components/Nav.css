@@ -61,17 +61,18 @@
 	}
 
 	.sign {
-		width: 15vw;
+		width: 11vw;
 	}
 
 	.nav {
+		width: 100%;
 		margin: 0;
 		font-size: 2.5vw;
 	}
 
 	.main-navigation li {
 		display: inline-block;
-		margin-right: 5vw;
+		margin-right: 3vw;
 		margin-bottom: 0;
 	}
 
@@ -96,16 +97,17 @@
 	}
 
 	.sign {
-		width: 10vw;
+		width: 8vw;
 	}
 
 	.nav {
-		font-size: 3vw;
+		width: 100%;
+		font-size: 2vw;
 	}
 
 	.main-navigation li {
 		display: inline-block;
-		margin-right: 5vw;
+		margin-right: 3vw;
 		margin-bottom: 0;
 	}
 
