@@ -2,6 +2,8 @@ require('./normalize.css');
 require('./font-awesome/font-awesome.min.css');
 require('./core.css');
 
+import particlesJS from 'particles.js';
+
 
 import React from 'react';
 import ReactDOM from 'react-dom';

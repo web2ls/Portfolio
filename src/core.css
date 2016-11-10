@@ -21,6 +21,18 @@ ul {
 	display: none;
 }
 
+#container-app {
+	position: relative;
+	z-index: 2;
+}
+
+#particles-js {
+	 width: 100%;
+   height: 100%;
+   position: fixed;
+   z-index: 1;
+}
+
 .container-content {
 	display: inline-block;
 	width: 58%;
@@ -72,6 +84,10 @@ ul {
 }
 
 @media only screen and (max-width : 1400px) and (orientation: portrait) {
+	#particles-js {
+		display: none;
+	}
+
 	video {
 		display: none;
 	}
@@ -88,6 +104,10 @@ ul {
 }
 
 @media only screen and (max-width : 1400px) and (orientation: landscape) {
+	#particles-js {
+		display: none;
+	}
+	
 	video {
 		display: none;
 	}
