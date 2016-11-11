@@ -46,6 +46,7 @@ const LogIn = React.createClass({
 						className='username' 
 						ref='authName' 
 						type="text"
+						tabindex='1'
 						placeholder='Введите имя пользователя...' />
 					</label>
 					<br />
@@ -54,11 +55,13 @@ const LogIn = React.createClass({
 						className='userpasswd' 
 						ref='authPasswd' 
 						type="password" 
+						tabindex='2'
 						placeholder='Введите пароль...' />
 					</label>
 					<br />
 					<button 
 					className='login-btn'
+					tabindex='3'
 					onClick={this.handleAuthBtnClick} 
 					type="button">Вход</button>		
 				</div>
